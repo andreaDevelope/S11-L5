@@ -1,0 +1,37 @@
+<div class="container-fluid text-bg-dark">
+  <div class="row">
+    <div class="d-flex align-items-center footer-cont">
+      <div class="col text-center">
+        <a routerLink="">
+          <p *ngIf="!isLogIn">welcome</p>
+          <p *ngIf="isLogIn"></p>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a routerLink="/home">
+          <p *ngIf="!isLogIn"></p>
+          <p *ngIf="isLogIn">Home</p>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a routerLink="user-detail">
+          <p *ngIf="!isLogIn"></p>
+          <p *ngIf="isLogIn">User Detail</p>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a routerLink="favorites">
+          <p *ngIf="!isLogIn"></p>
+          <p *ngIf="isLogIn">Favoutires</p>
+        </a>
+      </div>
+      <div class="col text-center">
+        <a
+          href="https://github.com/andreaDevelope?tab=repositories"
+          target="_blank"
+          >andreaDevelope</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

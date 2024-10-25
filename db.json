@@ -1,0 +1,182 @@
+{
+  "users": [
+    {
+      "email": "ciao@ciaio.com",
+      "password": "$2a$10$V2BHcBUn3bO27hSbtZ0OpOmTp3/xl8FjJCs2W.lV6WEK5bLJUVKba",
+      "nome": "Mario",
+      "cognome": "Rossi",
+      "username": "aaa",
+      "id": 1
+    },
+    {
+      "email": "ciao@ciaio2.com",
+      "password": "$2a$10$gRHcw/d3g67j0Fjjib5oFucqaLgONCs2tZsBZFmnuO18e8062YZIq",
+      "nome": "Giacomo",
+      "cognome": "Rossi",
+      "username": "bbb",
+      "id": 2
+    },
+    {
+      "email": "lucio@dalla.com",
+      "password": "$2a$10$XgIO0fh3a7dHJqsYYal4te.XbF51zqERc/hvRK1JiMVl5VBr6sqnm",
+      "nome": "Lucio",
+      "cognome": "Dalla",
+      "username": "lucione",
+      "id": 3
+    },
+    {
+      "email": "flexable@681mail.com",
+      "password": "$2a$10$lt0r1Ot8oprsg2j.lHvJFeD1rj0ARpH9U/IIV2zzC7OX2X3/7oC/.",
+      "nome": "Paolo",
+      "cognome": "Bonolis",
+      "username": "paolone",
+      "id": 4
+    },
+    {
+      "email": "antonello@venditti.como",
+      "password": "$2a$10$cZXXJ8BscQiYvHY3lhwrwO47fa2JxTfmLOK4tarZN0KsXZRgGD5YO",
+      "nome": "Roma",
+      "cognome": "Capoccia",
+      "username": "antonello",
+      "id": 5
+    }
+  ],
+  "movies-popular": [
+    {
+      "titolo": "Il padrino",
+      "anno": 1972,
+      "regista": "Francis Ford Coppola",
+      "img": "https://upload.wikimedia.org/wikipedia/it/a/af/The_Godfather.jpg"
+    },
+    {
+      "titolo": "Forrest Gump",
+      "anno": 1994,
+      "regista": "Robert Zemeckis",
+      "img": "https://upload.wikimedia.org/wikipedia/it/1/17/Forrest_Gump.jpg"
+    },
+    {
+      "titolo": "La vita è bella",
+      "anno": 1997,
+      "regista": "Roberto Benigni",
+      "img": "https://upload.wikimedia.org/wikipedia/it/7/7c/La_vita_%C3%A8_bella_%28film%29.jpg"
+    },
+    {
+      "titolo": "Inception",
+      "anno": 2010,
+      "regista": "Christopher Nolan",
+      "img": "https://upload.wikimedia.org/wikipedia/it/7/7f/Inception_ver3.jpg"
+    },
+    {
+      "titolo": "Titanic",
+      "anno": 1997,
+      "regista": "James Cameron",
+      "img": "https://upload.wikimedia.org/wikipedia/it/2/22/Titanic_%28film_1997%29.jpg"
+    },
+    {
+      "titolo": "Il cavaliere oscuro",
+      "anno": 2008,
+      "regista": "Christopher Nolan",
+      "img": "https://upload.wikimedia.org/wikipedia/it/8/83/Il_cavaliere_oscuro.jpg"
+    },
+    {
+      "titolo": "Schindler's List",
+      "anno": 1993,
+      "regista": "Steven Spielberg",
+      "img": "https://upload.wikimedia.org/wikipedia/it/3/38/Schindler%27s_List.png"
+    },
+    {
+      "titolo": "Fight Club",
+      "anno": 1999,
+      "regista": "David Fincher",
+      "img": "https://upload.wikimedia.org/wikipedia/it/f/fc/Fight_Club.jpg"
+    },
+    {
+      "titolo": "Ritorno al futuro",
+      "anno": 1985,
+      "regista": "Robert Zemeckis",
+      "img": "https://upload.wikimedia.org/wikipedia/it/d/d2/Ritorno_al_futuro.jpg"
+    },
+    {
+      "titolo": "Star Wars: Episodio IV - Una nuova speranza",
+      "anno": 1977,
+      "regista": "George Lucas",
+      "img": "https://upload.wikimedia.org/wikipedia/it/4/44/Star_Wars_Episodio_IV_-_Una_nuova_speranza.jpg"
+    },
+    {
+      "titolo": "Il signore degli anelli: La compagnia dell'anello",
+      "anno": 2001,
+      "regista": "Peter Jackson",
+      "img": "https://upload.wikimedia.org/wikipedia/it/b/b0/Il_Signore_degli_Anelli_-_La_Compagnia_dell%27Anello.jpg"
+    },
+    {
+      "titolo": "Pulp Fiction",
+      "anno": 1994,
+      "regista": "Quentin Tarantino",
+      "img": "https://upload.wikimedia.org/wikipedia/it/1/1b/Pulp_Fiction.jpg"
+    },
+    {
+      "titolo": "Matrix",
+      "anno": 1999,
+      "regista": "Lana e Lilly Wachowski",
+      "img": "https://upload.wikimedia.org/wikipedia/it/c/c1/Matrix.jpg"
+    },
+    {
+      "titolo": "Joker",
+      "anno": 2019,
+      "regista": "Todd Phillips",
+      "img": "https://upload.wikimedia.org/wikipedia/it/e/e1/Joker_%282019%29.jpg"
+    },
+    {
+      "titolo": "Interstellar",
+      "anno": 2014,
+      "regista": "Christopher Nolan",
+      "img": "https://upload.wikimedia.org/wikipedia/it/3/3a/Interstellar_film_poster.jpg"
+    },
+    {
+      "titolo": "Gladiatore",
+      "anno": 2000,
+      "regista": "Ridley Scott",
+      "img": "https://upload.wikimedia.org/wikipedia/it/7/7d/Gladiatore.png"
+    },
+    {
+      "titolo": "Se7en",
+      "anno": 1995,
+      "regista": "David Fincher",
+      "img": "https://upload.wikimedia.org/wikipedia/it/6/67/Se7en_poster.png"
+    },
+    {
+      "titolo": "I soliti sospetti",
+      "anno": 1995,
+      "regista": "Bryan Singer",
+      "img": "https://upload.wikimedia.org/wikipedia/it/c/cb/I_soliti_sospetti.png"
+    },
+    {
+      "titolo": "Shutter Island",
+      "anno": 2010,
+      "regista": "Martin Scorsese",
+      "img": "https://upload.wikimedia.org/wikipedia/it/a/a7/Shutter_island_film.jpg"
+    },
+    {
+      "titolo": "C'era una volta in America",
+      "anno": 1984,
+      "regista": "Sergio Leone",
+      "img": "https://upload.wikimedia.org/wikipedia/it/d/d9/C%27era_una_volta_in_America.jpg"
+    },
+    {
+      "titolo": "The Wolf of Wall Street",
+      "anno": 2013,
+      "regista": "Martin Scorsese",
+      "img": "https://upload.wikimedia.org/wikipedia/it/f/f1/The_Wolf_of_Wall_Street.png"
+    }
+  ],
+  "favorites": [
+    {
+      "titolo": "Forrest Gump",
+      "anno": 1994,
+      "regista": "Robert Zemeckis",
+      "img": "https://upload.wikimedia.org/wikipedia/it/1/17/Forrest_Gump.jpg",
+      "id": 1,
+      "userId": 1
+    }
+  ]
+}

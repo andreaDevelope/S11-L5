@@ -1,0 +1,18 @@
+.cont {
+  background: linear-gradient(to top, #ff7e5f, #feb47b);
+}
+
+a {
+  text-decoration: none;
+  color: lightcyan;
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+img {
+  height: 40px;
+  &:hover {
+    scale: 1.1;
+  }
+}

@@ -1,0 +1,30 @@
+<div class="container-fluid p-2 cont">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-3">
+      <a routerLink="">
+        <img
+          src="http://mondocine.net/wp-content/uploads/2015/05/mgm.jpg"
+          alt="logo-cinema"
+        />
+      </a>
+    </div>
+    <div class="col-9 d-flex justify-content-around">
+      <a routerLink="">
+        <p *ngIf="!isLogIn">Welcome</p>
+        <p *ngIf="isLogIn"></p>
+      </a>
+      <a routerLink="/home">
+        <p *ngIf="!isLogIn"></p>
+        <p *ngIf="isLogIn">Home</p>
+      </a>
+      <a routerLink="/user-detail">
+        <p *ngIf="!isLogIn"></p>
+        <p *ngIf="isLogIn">User Detail</p>
+      </a>
+      <a routerLink="/favorites">
+        <p *ngIf="!isLogIn"></p>
+        <p *ngIf="isLogIn">Favorites</p>
+      </a>
+    </div>
+  </div>
+</div>

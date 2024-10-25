@@ -1,0 +1,67 @@
+<div class="form-container">
+  <form [formGroup]="form">
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        formControlName="username"
+        [ngClass]="{
+          'is-invalid': isInvalid('username'),
+          'is-valid': isValid('username')
+        }"
+      />
+      <label for="username" class="form-label">Username</label>
+      <p *ngIf="isInvalid('username')" class="error-message">
+        Campo username non valido
+      </p>
+    </div>
+
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        formControlName="email"
+        [ngClass]="{
+          'is-invalid': isInvalid('email'),
+          'is-valid': isValid('email')
+        }"
+      />
+      <label for="email" class="form-label">Email</label>
+      <p *ngIf="isInvalid('email')" class="error-message">
+        Campo email non valido
+      </p>
+    </div>
+
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        formControlName="psw"
+        [ngClass]="{
+          'is-invalid': isInvalid('psw'),
+          'is-valid': isValid('psw')
+        }"
+      />
+      <label for="password" class="form-label">Password</label>
+      <p *ngIf="isInvalid('psw')" class="error-message">
+        Campo password non valido
+      </p>
+    </div>
+
+    <p *ngIf="isSignup" class="text-center text-success">sei dentro!!</p>
+
+    <div class="d-grid">
+      <button
+        (click)="login()"
+        [disabled]="!form.valid"
+        type="submit"
+        class="btn btn-custom"
+      >
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
