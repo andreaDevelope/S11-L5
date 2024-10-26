@@ -1,1 +1,49 @@
-<p>user-detail works!</p>
+<div *ngIf="user" class="constainer-detail">
+  <div class="d-flex justify-content-center">
+    <h1 class="text-center mt-5 text-white">
+      area privata di
+      {{ user.username }}
+    </h1>
+  </div>
+  <div
+    class="d-flex justify-content-center my-5 justify-content-around text-white"
+  >
+    <div
+      class="d-flex flex-column align-items-center"
+      *ngIf="favArr.length > 0"
+    >
+      <h3>i preferiti di...</h3>
+      <div class="container">
+        <div class="row">
+          <div *ngFor="let fav of favArr" class="col-12 col-md-6">
+            <div class="card box">
+              <img src="{{ fav.img }}" class="card-img-top" alt="img-movie" />
+              <div class="card-body">
+                <h5 class="card-title">{{ fav.titolo }}</h5>
+                <h5 class="card-title">by {{ fav.regista }}</h5>
+
+                <p class="card-text">
+                  {{ fav.anno }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-center bg-dark">
+      <h3>i tuoi dati</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <p>nome: {{ user.nome }}</p>
+            <p>cognome: {{ user.cognome }}</p>
+            <p>email: {{ user.email }}</p>
+            <p>username: {{ user.username }}</p>
+            <p>password: {{ user.password }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

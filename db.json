@@ -47,6 +47,14 @@
       "cognome": "andrea",
       "username": "andreone",
       "id": 6
+    },
+    {
+      "email": "aa@aa.como",
+      "password": "$2a$10$A6nHlUaGSqVq2H8nlRveT.0btQVa9eKEpfWX7xWa76irSqllBjA6i",
+      "nome": "ciao",
+      "cognome": "ciao",
+      "username": "ciao",
+      "id": 7
     }
   ],
   "movies-popular": [

@@ -49,6 +49,8 @@ export class AuthService {
         if (!expDate) return;
 
         this.autoLogout(expDate);
+
+        this.router.navigate(['/home']);
       })
     );
   }
@@ -56,7 +58,7 @@ export class AuthService {
   logout() {
     this.authSubject$.next(null);
     localStorage.removeItem('accessData');
-    this.router.navigate(['']);
+    this.router.navigate(['/login']);
   }
 
   autoLogout(expDate: Date) {

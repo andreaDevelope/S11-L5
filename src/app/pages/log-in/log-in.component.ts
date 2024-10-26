@@ -86,7 +86,6 @@ export class LogInComponent {
   }
 
   loginMess() {
-    this.router.navigate(['/home']);
     this.isSignup = false;
   }
 }

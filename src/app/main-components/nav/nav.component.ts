@@ -24,4 +24,8 @@ export class NavComponent {
       )
       .subscribe();
   }
+
+  logout() {
+    this.authServ.logout();
+  }
 }

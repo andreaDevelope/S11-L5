@@ -25,6 +25,11 @@
         <p *ngIf="!isLogIn"></p>
         <p *ngIf="isLogIn">Favorites</p>
       </a>
+
+      <a (click)="logout()" routerLink="">
+        <p *ngIf="!isLogIn"></p>
+        <p *ngIf="isLogIn">log-out</p>
+      </a>
     </div>
   </div>
 </div>
