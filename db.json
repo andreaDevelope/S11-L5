@@ -39,6 +39,14 @@
       "cognome": "Capoccia",
       "username": "antonello",
       "id": 5
+    },
+    {
+      "email": "andrea@aaa.italo",
+      "password": "$2a$10$bX5Y7Oj5VEZUzyXOt27Wrueaok7Dt8pxgBnzZDX8yFkkiIj4y8NU.",
+      "nome": "andrea",
+      "cognome": "andrea",
+      "username": "andreone",
+      "id": 6
     }
   ],
   "movies-popular": [
@@ -175,8 +183,14 @@
       "anno": 1994,
       "regista": "Robert Zemeckis",
       "img": "https://upload.wikimedia.org/wikipedia/it/1/17/Forrest_Gump.jpg",
-      "id": 1,
-      "userId": 1
+      "id": 1
+    },
+    {
+      "titolo": "Inception",
+      "anno": 2010,
+      "regista": "Christopher Nolan",
+      "img": "https://upload.wikimedia.org/wikipedia/it/7/7f/Inception_ver3.jpg",
+      "id": 6
     }
   ]
 }

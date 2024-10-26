@@ -15,7 +15,7 @@ import { iFavorites } from '../../interfaces/favorites';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
-  private favorites: Partial<iFavorites[]> = [];
+  favorites: Partial<iFavorites[]> = [];
   movieArr: iMovie[] = [];
   userArr: iUser[] = [];
   user!: iUser;
@@ -71,12 +71,8 @@ export class HomeComponent {
       id: this.user.id,
     };
 
-    this.movieServ.addFavorite(favorite).subscribe(
-      (fav) => {
-        console.log('Aggiunto ai preferiti:', fav);
-        this.favorites.push(fav);
-      },
-      (error) => console.error("Errore durante l'aggiunta ai preferiti:", error)
-    );
+    this.movieServ
+      .addFavorite(favorite)
+      .subscribe((fav) => this.favorites.push(fav));
   }
 }

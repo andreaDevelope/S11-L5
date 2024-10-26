@@ -3,4 +3,5 @@ export interface iMovie {
   anno: number;
   regista: string;
   img: string;
+  id?: number;
 }
