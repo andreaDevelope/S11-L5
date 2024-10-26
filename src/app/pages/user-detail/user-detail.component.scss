@@ -2,3 +2,38 @@
   background-image: url("https://www.chedonna.it/wp-content/uploads/2018/09/IPTV-min.jpg");
   min-height: 100vh;
 }
+
+@keyframes stick {
+  0% {
+    transform: translateZ(1000px) scale(0) rotateY(360deg);
+  }
+  100% {
+    transform: translateZ(0) scale(1) rotateY(0deg);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideInFromLeft 1.5s ease-out;
+}
+
+img {
+  padding: 3px;
+  object-fit: contain;
+  width: 100%;
+  height: 100px;
+}
+
+.details {
+  min-width: 250px;
+}

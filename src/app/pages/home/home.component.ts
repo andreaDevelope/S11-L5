@@ -31,6 +31,7 @@ export class HomeComponent {
     this.getAllMovie();
     this.getAllUser();
     this.getThisUser();
+    setTimeout(() => console.log(this.movieArr[0].img), 2000);
   }
 
   getAllMovie() {

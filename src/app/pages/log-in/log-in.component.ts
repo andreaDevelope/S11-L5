@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
-import { iUser } from '../../interfaces/i-user';
 import { iLoginRequest } from '../../interfaces/i-login-request';
 
 @Component({

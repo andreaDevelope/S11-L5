@@ -11,7 +11,7 @@
   iscritti
 </button>
 
-<div class="container">
+<div class="container" *ngIf="movieArr">
   <div class="row">
     <div class="col-6 col-md-3 my-3" *ngFor="let movie of movieArr">
       <div class="card box">
@@ -29,6 +29,3 @@
     </div>
   </div>
 </div>
-<!-- <div *ngIf="movieArr.length > 0">
-  <p *ngFor="let movie of movieArr">{{ movie.titolo }}</p>
-</div> -->

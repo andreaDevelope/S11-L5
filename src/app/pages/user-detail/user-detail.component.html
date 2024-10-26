@@ -1,6 +1,6 @@
 <div *ngIf="user" class="constainer-detail">
   <div class="d-flex justify-content-center">
-    <h1 class="text-center mt-5 text-white">
+    <h1 class="text-center mt-5 text-bg-danger px-3 slide-in py-1 rounded-5">
       area privata di
       {{ user.username }}
     </h1>
@@ -12,35 +12,62 @@
       class="d-flex flex-column align-items-center"
       *ngIf="favArr.length > 0"
     >
-      <h3>i preferiti di...</h3>
+      <button class="btn btn-warning my-3" (click)="toggleFav()">
+        i tuoi preferiti
+      </button>
       <div class="container">
-        <div class="row">
-          <div *ngFor="let fav of favArr" class="col-12 col-md-6">
-            <div class="card box">
-              <img src="{{ fav.img }}" class="card-img-top" alt="img-movie" />
-              <div class="card-body">
-                <h5 class="card-title">{{ fav.titolo }}</h5>
-                <h5 class="card-title">by {{ fav.regista }}</h5>
-
-                <p class="card-text">
-                  {{ fav.anno }}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <table
+          *ngIf="isFavVisible"
+          class="table table-dark table-striped slide-in"
+        >
+          <thead>
+            <tr>
+              <th scope="col">Titolo</th>
+              <th scope="col">Regista</th>
+              <th scope="col">Anno</th>
+              <th scope="col">Copertina</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let fav of favArr">
+              <td>{{ fav.titolo }}</td>
+              <td>{{ fav.regista }}</td>
+              <td>{{ fav.anno }}</td>
+              <td>
+                <img
+                  src="{{ fav.img }}"
+                  alt="img-movie"
+                  class="img-thumbnail"
+                  style="width: 100px; height: auto"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-    <div class="d-flex flex-column align-items-center bg-dark">
-      <h3>i tuoi dati</h3>
+    <div class="d-flex flex-column align-items-center">
+      <button class="btn btn-warning my-3" (click)="toggleDetail()">
+        i tuoi dati
+      </button>
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <p>nome: {{ user.nome }}</p>
-            <p>cognome: {{ user.cognome }}</p>
-            <p>email: {{ user.email }}</p>
-            <p>username: {{ user.username }}</p>
-            <p>password: {{ user.password }}</p>
+        <div class="row ps-3">
+          <div
+            class="col-12 col-md-6 py-3 bg-dark details slide-in"
+            *ngIf="isDetailVisible"
+          >
+            <p class="border border-danger rounded-4 p-3">
+              nome: {{ user.nome }}
+            </p>
+            <p class="border border-danger rounded-4 p-3">
+              cognome: {{ user.cognome }}
+            </p>
+            <p class="border border-danger rounded-4 p-3">
+              email: {{ user.email }}
+            </p>
+            <p class="border border-danger rounded-4 p-3">
+              username: {{ user.username }}
+            </p>
           </div>
         </div>
       </div>

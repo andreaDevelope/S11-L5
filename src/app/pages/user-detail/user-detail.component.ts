@@ -13,6 +13,8 @@ import { map } from 'rxjs';
 export class UserDetailComponent {
   user!: iUser;
   favArr: iFavorites[] = [];
+  isFavVisible: boolean = false;
+  isDetailVisible: boolean = false;
 
   constructor(private movieServ: MovieService, private authServ: AuthService) {}
 
@@ -50,5 +52,13 @@ export class UserDetailComponent {
           }
         }))
     );
+  }
+
+  toggleFav() {
+    this.isFavVisible = !this.isFavVisible;
+  }
+
+  toggleDetail() {
+    this.isDetailVisible = !this.isDetailVisible;
   }
 }
