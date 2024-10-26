@@ -68,11 +68,24 @@ export class HomeComponent {
       anno: movie.anno,
       regista: movie.regista,
       img: movie.img,
-      id: this.user.id,
+      userId: this.user.id,
     };
 
-    this.movieServ
-      .addFavorite(favorite)
-      .subscribe((fav) => this.favorites.push(fav));
+    this.movieServ.addFavorite(favorite).subscribe((fav) => {
+      const alreadyExists = this.favorites.some((favo) => favo?.id === fav.id);
+
+      if (!alreadyExists) {
+        this.favorites = this.favorites.filter(
+          (favo) => favo && favo.id !== fav.id
+        );
+        this.favorites.push(fav);
+      } else {
+        console.log('Il film è già nei preferiti!');
+      }
+    });
+  }
+
+  deleteFav(id: number) {
+    this.movieServ.deleteFavorites(id).subscribe();
   }
 }

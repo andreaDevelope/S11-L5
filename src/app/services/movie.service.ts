@@ -12,6 +12,7 @@ import { iUser } from '../interfaces/i-user';
 })
 export class MovieService {
   movieArr: iMovie[] = [];
+  favArr: iFavorites[] = [];
 
   user!: iUser;
 
@@ -34,5 +35,9 @@ export class MovieService {
 
   getAllFavorites() {
     return this.http.get<iFavorites[]>(this.favoritesUrl);
+  }
+
+  deleteFavorites(id: number) {
+    return this.http.delete<iFavorites>(`${this.favoritesUrl}/${id}`);
   }
 }

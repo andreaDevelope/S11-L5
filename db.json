@@ -179,18 +179,52 @@
   ],
   "favorites": [
     {
-      "titolo": "Forrest Gump",
-      "anno": 1994,
-      "regista": "Robert Zemeckis",
-      "img": "https://upload.wikimedia.org/wikipedia/it/1/17/Forrest_Gump.jpg",
-      "id": 1
+      "titolo": "Inception",
+      "anno": 2010,
+      "regista": "Christopher Nolan",
+      "img": "https://upload.wikimedia.org/wikipedia/it/7/7f/Inception_ver3.jpg",
+      "userId": 6,
+      "id": 7
+    },
+    {
+      "titolo": "Fight Club",
+      "anno": 1999,
+      "regista": "David Fincher",
+      "img": "https://upload.wikimedia.org/wikipedia/it/f/fc/Fight_Club.jpg",
+      "userId": 6,
+      "id": 8
     },
     {
       "titolo": "Inception",
       "anno": 2010,
       "regista": "Christopher Nolan",
       "img": "https://upload.wikimedia.org/wikipedia/it/7/7f/Inception_ver3.jpg",
-      "id": 6
+      "userId": 6,
+      "id": 9
+    },
+    {
+      "titolo": "Inception",
+      "anno": 2010,
+      "regista": "Christopher Nolan",
+      "img": "https://upload.wikimedia.org/wikipedia/it/7/7f/Inception_ver3.jpg",
+      "userId": 6,
+      "id": 10
+    },
+    {
+      "titolo": "La vita è bella",
+      "anno": 1997,
+      "regista": "Roberto Benigni",
+      "img": "https://upload.wikimedia.org/wikipedia/it/7/7c/La_vita_%C3%A8_bella_%28film%29.jpg",
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "titolo": "Pulp Fiction",
+      "anno": 1994,
+      "regista": "Quentin Tarantino",
+      "img": "https://upload.wikimedia.org/wikipedia/it/1/1b/Pulp_Fiction.jpg",
+      "userId": 1,
+      "id": 12
     }
   ]
 }
