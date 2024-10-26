@@ -11,4 +11,8 @@ export class UserService {
   getAll() {
     return this.http.get<iUser[]>('http://localhost:3000/users');
   }
+
+  delete(id: number) {
+    return this.http.delete<iUser>(`http://localhost:3000/users/${id}`);
+  }
 }

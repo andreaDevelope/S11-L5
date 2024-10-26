@@ -63,5 +63,12 @@
         Sign Up
       </button>
     </div>
+
+    <p
+      *ngIf="err"
+      class="text-center text-danger p-3 border border-danger mt-3 rounded-5"
+    >
+      credenziali non corrette
+    </p>
   </form>
 </div>

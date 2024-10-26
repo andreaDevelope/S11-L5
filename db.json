@@ -41,14 +41,6 @@
       "id": 5
     },
     {
-      "email": "andrea@aaa.italo",
-      "password": "$2a$10$bX5Y7Oj5VEZUzyXOt27Wrueaok7Dt8pxgBnzZDX8yFkkiIj4y8NU.",
-      "nome": "andrea",
-      "cognome": "andrea",
-      "username": "andreone",
-      "id": 6
-    },
-    {
       "email": "aa@aa.como",
       "password": "$2a$10$A6nHlUaGSqVq2H8nlRveT.0btQVa9eKEpfWX7xWa76irSqllBjA6i",
       "nome": "ciao",
@@ -185,39 +177,7 @@
       "img": "https://www.themoviedb.org/t/p/original/br7n8b3ELexcvs6l30IH2x9P2ux.jpg"
     }
   ],
-"favorites": [
-    {
-      "titolo": "Inception",
-      "anno": 2010,
-      "regista": "Christopher Nolan",
-      "img": "http://images2.fanpop.com/image/photos/14300000/Inception-inception-2010-14355477-1680-1050.jpg",
-      "userId": 6,
-      "id": 7
-    },
-    {
-      "titolo": "Fight Club",
-      "anno": 1999,
-      "regista": "David Fincher",
-      "img": "https://www.themoviedb.org/t/p/original/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
-      "userId": 6,
-      "id": 8
-    },
-    {
-      "titolo": "Inception",
-      "anno": 2010,
-      "regista": "Christopher Nolan",
-      "img": "http://images2.fanpop.com/image/photos/14300000/Inception-inception-2010-14355477-1680-1050.jpg",
-      "userId": 6,
-      "id": 9
-    },
-    {
-      "titolo": "Inception",
-      "anno": 2010,
-      "regista": "Christopher Nolan",
-      "img": "http://images2.fanpop.com/image/photos/14300000/Inception-inception-2010-14355477-1680-1050.jpg",
-      "userId": 6,
-      "id": 10
-    },
+  "favorites": [
     {
       "titolo": "La vita è bella",
       "anno": 1997,

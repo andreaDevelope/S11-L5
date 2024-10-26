@@ -4,6 +4,7 @@ import { iFavorites } from '../../interfaces/favorites';
 import { AuthService } from '../../services/auth.service';
 import { MovieService } from '../../services/movie.service';
 import { map } from 'rxjs';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-user-detail',
@@ -15,8 +16,13 @@ export class UserDetailComponent {
   favArr: iFavorites[] = [];
   isFavVisible: boolean = false;
   isDetailVisible: boolean = false;
+  isShure: boolean = false;
 
-  constructor(private movieServ: MovieService, private authServ: AuthService) {}
+  constructor(
+    private movieServ: MovieService,
+    private authServ: AuthService,
+    private userServ: UserService
+  ) {}
 
   ngOnInit() {
     this.getThisUser();
@@ -60,5 +66,18 @@ export class UserDetailComponent {
 
   toggleDetail() {
     this.isDetailVisible = !this.isDetailVisible;
+  }
+
+  isShureToggle() {
+    this.isShure = !this.isShure;
+  }
+
+  remove(id: number | undefined) {
+    if (id) {
+      this.userServ.delete(id).subscribe();
+      this.authServ.logout();
+    } else {
+      console.log('errore nell eliminazione dell user');
+    }
   }
 }

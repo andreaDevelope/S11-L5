@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { iFavorites } from '../../interfaces/favorites';
 import { MovieService } from '../../services/movie.service';
-import { UserService } from '../../services/user.service';
 import { iUser } from '../../interfaces/i-user';
 import { AuthService } from '../../services/auth.service';
 import { map } from 'rxjs';
@@ -15,16 +14,13 @@ export class FavoritesComponent {
   favArr: iFavorites[] = [];
   user!: iUser;
 
-  constructor(
-    private movieServ: MovieService,
-    private userServ: UserService,
-    private authServ: AuthService
-  ) {}
+  constructor(private movieServ: MovieService, private authServ: AuthService) {}
 
   ngOnInit() {
     this.getThisUser();
     if (this.movieServ.user) {
       this.getAllFavorites();
+      console;
     } else {
       console.error('Utente non definito in MovieService');
     }
@@ -55,5 +51,14 @@ export class FavoritesComponent {
         })
       )
       .subscribe();
+  }
+
+  remove(id: number | undefined) {
+    if (id) {
+      this.movieServ.deleteFavorites(id).subscribe();
+      window.location.reload();
+    } else {
+      console.log('film non trovato tra i preferiti');
+    }
   }
 }

@@ -4,6 +4,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { iLoginRequest } from '../../interfaces/i-login-request';
+import { iAccessData } from '../../interfaces/i-access-data';
 
 @Component({
   selector: 'app-log-in',
@@ -15,6 +16,7 @@ export class LogInComponent {
   message: string = '';
   jwtHelper: JwtHelperService;
   isSignup: boolean = false;
+  err: boolean = false;
 
   constructor(
     private fb: FormBuilder,
@@ -75,10 +77,23 @@ export class LogInComponent {
         username: this.form.get('username')?.value,
         password: this.form.get('psw')?.value,
       };
-      this.authServ.login(user).subscribe((res) => {
-        this.isSignup = true;
-        setInterval(() => this.loginMess(), 2000);
-      });
+
+      this.authServ.login(user).subscribe(
+        (res: iAccessData) => {
+          if (res && res.accessToken) {
+            this.isSignup = true;
+            setTimeout(() => this.loginMess(), 3000);
+          } else {
+            this.err = true;
+            setTimeout(() => window.location.reload(), 3000);
+          }
+        },
+        (error) => {
+          console.log(error);
+          this.err = true;
+          setTimeout(() => window.location.reload(), 3000);
+        }
+      );
     } else {
       this.message = 'Per favore compila tutti i campi correttamente.';
     }

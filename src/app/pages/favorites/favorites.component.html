@@ -1,18 +1,21 @@
-<div class="container" *ngIf="favArr.length > 0">
-  <h1 class="text-center slide-in my-5 text-danger">I TUOI PREFERITI</h1>
-  <div class="row">
-    <div class="col-6 col-md-3 my-3" *ngFor="let fav of favArr">
-      <div class="card box">
-        <img src="{{ fav.img }}" class="card-img-top" alt="img-movie" />
-        <div class="card-body">
-          <h5 class="card-title">{{ fav.titolo }}</h5>
-          <h5 class="card-title">by {{ fav.regista }}</h5>
+<h1
+  class="text-center slide-in w-50 mx-auto my-5 text-white bg-danger rounded-5"
+>
+  I TUOI PREFERITI
+</h1>
+<div class="d-flex justify-content-around" *ngIf="favArr.length > 0">
+  <div class="card box" *ngFor="let fav of favArr">
+    <img src="{{ fav.img }}" class="card-img-top" alt="img-movie" />
+    <div class="card-body">
+      <h5 class="card-title">{{ fav.titolo }}</h5>
+      <h5 class="card-title">by {{ fav.regista }}</h5>
 
-          <p class="card-text">
-            {{ fav.anno }}
-          </p>
-        </div>
-      </div>
+      <p class="card-text">
+        {{ fav.anno }}
+      </p>
+      <button (click)="remove(fav.id)" class="btn btn-danger mt-4">
+        DELETE
+      </button>
     </div>
   </div>
 </div>
