@@ -3,8 +3,8 @@
 >
   I TUOI PREFERITI
 </h1>
-<div class="d-flex justify-content-around" *ngIf="favArr.length > 0">
-  <div class="card box" *ngFor="let fav of favArr">
+<div class="d-flex flex-wrap justify-content-around" *ngIf="favArr.length > 0">
+  <div class="card box m-2" *ngFor="let fav of favArr">
     <img src="{{ fav.img }}" class="card-img-top" alt="img-movie" />
     <div class="card-body">
       <h5 class="card-title">{{ fav.titolo }}</h5>

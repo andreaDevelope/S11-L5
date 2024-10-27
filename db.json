@@ -193,6 +193,38 @@
       "img": "https://www.themoviedb.org/t/p/original/6lXRHGoEbnnBUKsuqpL9JxD4DzT.jpg",
       "userId": 1,
       "id": 12
+    },
+    {
+      "titolo": "Schindler's List",
+      "anno": 1993,
+      "regista": "Steven Spielberg",
+      "img": "https://image.tmdb.org/t/p/original/m0pV0fmMERzCvPVQbLLrPPLl5q1.jpg",
+      "userId": 1,
+      "id": 30
+    },
+    {
+      "titolo": "Forrest Gump",
+      "anno": 1994,
+      "regista": "Robert Zemeckis",
+      "img": "https://www.mediaplaynews.com/wp-content/uploads/2019/05/forrestgump5.jpg",
+      "userId": 1,
+      "id": 32
+    },
+    {
+      "titolo": "Inception",
+      "anno": 2010,
+      "regista": "Christopher Nolan",
+      "img": "http://images2.fanpop.com/image/photos/14300000/Inception-inception-2010-14355477-1680-1050.jpg",
+      "userId": 1,
+      "id": 34
+    },
+    {
+      "titolo": "Il cavaliere oscuro",
+      "anno": 2008,
+      "regista": "Christopher Nolan",
+      "img": "https://www.warnerbros.it/wp-content/uploads/2018/03/Il-cavaliere-oscuro-%E2%80%93-Il-ritorno.jpg",
+      "userId": 1,
+      "id": 35
     }
   ]
 }

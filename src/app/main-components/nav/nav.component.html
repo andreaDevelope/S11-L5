@@ -1,30 +1,42 @@
-<div class="cont d-flex justify-content-between align-items-center px-2 py-3">
-  <a routerLink="">
-    <img
-      src="http://mondocine.net/wp-content/uploads/2015/05/mgm.jpg"
-      alt="logo-cinema"
-    />
-  </a>
-  <div class="d-flex justify-content-around flex-grow-1">
+<div class="cont">
+  <div class="d-flex justify-content-between align-items-center px-2 py-3">
     <a routerLink="">
-      <span *ngIf="!isLogIn">Welcome</span>
-      <span *ngIf="isLogIn"></span>
+      <img
+        src="http://mondocine.net/wp-content/uploads/2015/05/mgm.jpg"
+        alt="logo-cinema"
+      />
     </a>
-    <a routerLink="/home">
-      <span *ngIf="!isLogIn"></span>
-      <span *ngIf="isLogIn">Home</span>
-    </a>
-    <a routerLink="/user-detail">
-      <span *ngIf="!isLogIn"></span>
-      <span *ngIf="isLogIn">User Detail</span>
-    </a>
-    <a routerLink="/favorites">
-      <span *ngIf="!isLogIn"></span>
-      <span *ngIf="isLogIn">Favorites</span>
-    </a>
-    <a (click)="logout()" routerLink="">
-      <span *ngIf="!isLogIn"></span>
-      <span *ngIf="isLogIn">log-out</span>
-    </a>
+    <div class="d-flex justify-content-around flex-grow-1">
+      <a routerLink="">
+        <span *ngIf="!isLogIn">Welcome</span>
+        <span *ngIf="isLogIn"></span>
+      </a>
+      <a routerLink="/home">
+        <span *ngIf="!isLogIn"></span>
+        <span *ngIf="isLogIn">Home</span>
+      </a>
+      <a routerLink="/user-detail">
+        <span *ngIf="!isLogIn"></span>
+        <span *ngIf="isLogIn">User Detail</span>
+      </a>
+      <a routerLink="/favorites">
+        <span *ngIf="!isLogIn"></span>
+        <span *ngIf="isLogIn">Favorites</span>
+      </a>
+      <div>
+        <a (click)="isShow()" class="text-white">
+          <span *ngIf="!isLogIn"></span>
+          <span id="span" *ngIf="isLogIn">log-out</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="isShure" class="d-flex justify-content-center text-center pb-2">
+    <button (click)="logout()" class="p-2 mx-1 custom-b bg-danger text-white">
+      esci
+    </button>
+    <button (click)="isShow()" class="p-2 custom-b bg-success text-white">
+      annulla
+    </button>
   </div>
 </div>

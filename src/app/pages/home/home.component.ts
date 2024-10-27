@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { iMovie } from '../../interfaces/i-movie';
 import { MovieService } from '../../services/movie.service';
 import { iUser } from '../../interfaces/i-user';
@@ -19,6 +19,10 @@ export class HomeComponent {
   movieArr: iMovie[] = [];
   userArr: iUser[] = [];
   user!: iUser;
+  isAdded: boolean = false;
+
+  @ViewChild('aggiunto') aggiunto!: ElementRef;
+
   private offcanvasService = inject(NgbOffcanvas);
 
   constructor(
@@ -31,7 +35,7 @@ export class HomeComponent {
     this.getAllMovie();
     this.getAllUser();
     this.getThisUser();
-    setTimeout(() => console.log(this.movieArr[0].img), 2000);
+    setTimeout(() => console.log(this.movieArr[0]?.img), 2000);
   }
 
   getAllMovie() {
@@ -84,6 +88,9 @@ export class HomeComponent {
         console.log('Il film è già nei preferiti!');
       }
     });
+
+    this.isAdded = true;
+    setTimeout(() => (this.isAdded = false), 5000);
   }
 
   deleteFav(id: number) {

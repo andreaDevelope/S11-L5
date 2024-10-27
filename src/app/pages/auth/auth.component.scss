@@ -31,7 +31,19 @@ img {
   transform-style: preserve-3d;
   animation: stick 0.5s ease-out both;
   box-shadow: 5px 5px 10px rgba(10, 10, 10, 0.5);
-  background: linear-gradient(to top, #ff7e5f, #feb47b);
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.box-log {
+  background-image: url("../../../assets/biglietto.webp");
+  background-size: cover;
+}
+
+.box-sign {
+  background-image: url("../../../assets/botteghino.webp");
+  background-size: cover;
 }
 
 @keyframes stick {

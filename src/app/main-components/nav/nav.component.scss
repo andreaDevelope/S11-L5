@@ -10,9 +10,20 @@ a {
   }
 }
 
+#span {
+  text-decoration: none;
+  color: lightcyan;
+  cursor: pointer;
+}
+
 img {
   height: 40px;
   &:hover {
     scale: 1.1;
   }
+}
+
+.custom-b {
+  font-size: 0.8rem;
+  border-radius: 5rem;
 }
