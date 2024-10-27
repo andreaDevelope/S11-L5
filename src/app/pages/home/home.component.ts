@@ -21,6 +21,7 @@ export class HomeComponent {
   userArr: iUser[] = [];
   user!: iUser;
   isAdded: boolean = false;
+  isPresentFav: boolean = false;
 
   @ViewChild('aggiunto') aggiunto!: ElementRef;
 
@@ -33,6 +34,7 @@ export class HomeComponent {
   ) {}
 
   ngOnInit() {
+    this.getAllFavorites();
     this.getAllMovie();
     this.getAllUser();
     this.getThisUser();
@@ -79,32 +81,23 @@ export class HomeComponent {
       userId: this.user.id,
     };
 
-    this.movieServ.addFavorite(favorite).subscribe((fav) => {
-      // Verifica se il film esiste già nei preferiti confrontando il titolo
+    const alreadyExists = this.favorites.some(
+      (favo) => favo?.titolo === favorite.titolo
+    );
 
-      const alreadyExists = this.favorites.filter((favo) => {
-        if (favo) {
-          if (favo.titolo === favorite.titolo) {
-            return true;
-          } else {
-            return false;
-          }
-        } else {
-          return;
-        }
-      });
-
-      if (!alreadyExists) {
-        // Aggiunge il film solo se non è già nei preferiti
+    if (!alreadyExists) {
+      this.movieServ.addFavorite(favorite).subscribe((fav) => {
         this.favorites.push(fav);
         console.log('Film aggiunto ai preferiti!');
-      } else {
-        console.log('Il film è già nei preferiti!');
-      }
 
-      this.isAdded = true;
-      setTimeout(() => (this.isAdded = false), 5000);
-    });
+        this.isAdded = true;
+        setTimeout(() => (this.isAdded = false), 3000);
+      });
+    } else {
+      this.isPresentFav = true;
+      setInterval(() => (this.isPresentFav = false), 3000);
+      console.log('Il film è già nei preferiti!');
+    }
   }
 
   deleteFav(id: number) {
@@ -122,5 +115,9 @@ export class HomeComponent {
         }
       }
     });
+  }
+
+  getAllFavorites() {
+    this.movieServ.getAllFavorites().subscribe((fav) => (this.favorites = fav));
   }
 }

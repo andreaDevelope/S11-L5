@@ -195,28 +195,12 @@
       "id": 12
     },
     {
-      "titolo": "Forrest Gump",
-      "anno": 1994,
-      "regista": "Robert Zemeckis",
-      "img": "https://www.mediaplaynews.com/wp-content/uploads/2019/05/forrestgump5.jpg",
-      "userId": 1,
-      "id": 32
-    },
-    {
       "titolo": "C'era una volta in America",
       "anno": 1984,
       "regista": "Sergio Leone",
       "img": "https://www.stardust.it/uploads/img/movie/poster/6e3886fb46e14f2c870ea97a06792dc51552691172-1000w.jpg",
       "userId": 1,
       "id": 36
-    },
-    {
-      "titolo": "Il padrino",
-      "anno": 1972,
-      "regista": "Francis Ford Coppola",
-      "img": "https://i.ytimg.com/vi/tEkl2ZhwZ88/maxresdefault.jpg",
-      "userId": 1,
-      "id": 39
     }
   ]
 }
