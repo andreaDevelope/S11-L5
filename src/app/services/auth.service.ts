@@ -20,7 +20,7 @@ export class AuthService {
   authSubject$ = new BehaviorSubject<iAccessData | null>(null);
 
   user$ = this.authSubject$.asObservable().pipe(
-    tap((accessData) => this.isLoggedIn == !!accessData),
+    tap((accessData) => (this.isLoggedIn = !!accessData)),
     map((accessData) => accessData?.user)
   );
 

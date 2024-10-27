@@ -195,14 +195,6 @@
       "id": 12
     },
     {
-      "titolo": "Schindler's List",
-      "anno": 1993,
-      "regista": "Steven Spielberg",
-      "img": "https://image.tmdb.org/t/p/original/m0pV0fmMERzCvPVQbLLrPPLl5q1.jpg",
-      "userId": 1,
-      "id": 30
-    },
-    {
       "titolo": "Forrest Gump",
       "anno": 1994,
       "regista": "Robert Zemeckis",
@@ -233,6 +225,14 @@
       "img": "https://www.stardust.it/uploads/img/movie/poster/6e3886fb46e14f2c870ea97a06792dc51552691172-1000w.jpg",
       "userId": 1,
       "id": 36
+    },
+    {
+      "titolo": "Titanic",
+      "anno": 1997,
+      "regista": "James Cameron",
+      "img": "https://www.themoviedb.org/t/p/original/vIAm7UDNjGztvUYtDuS0in1VAXg.jpg",
+      "userId": 1,
+      "id": 38
     }
   ]
 }

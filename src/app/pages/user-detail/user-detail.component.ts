@@ -5,6 +5,7 @@ import { AuthService } from '../../services/auth.service';
 import { MovieService } from '../../services/movie.service';
 import { map } from 'rxjs';
 import { UserService } from '../../services/user.service';
+import { iAccessData } from '../../interfaces/i-access-data';
 
 @Component({
   selector: 'app-user-detail',
@@ -31,6 +32,8 @@ export class UserDetailComponent {
     } else {
       console.error('Utente non definito in MovieService');
     }
+    this.authServ.restoreUser();
+    this.setupAutoLogout();
   }
 
   getThisUser() {
@@ -79,5 +82,18 @@ export class UserDetailComponent {
     } else {
       console.log('errore nell eliminazione dell user');
     }
+  }
+
+  setupAutoLogout() {
+    this.authServ.authSubject$.subscribe((accessData: iAccessData | null) => {
+      if (accessData) {
+        const expDate = this.authServ.jwt.getTokenExpirationDate(
+          accessData.accessToken
+        );
+        if (expDate) {
+          this.authServ.autoLogout(expDate);
+        }
+      }
+    });
   }
 }

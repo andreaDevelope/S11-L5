@@ -8,6 +8,7 @@ import { map } from 'rxjs';
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdOffcanvasContentComponent } from '../../main-components/ngbd-offcanvas-content/ngbd-offcanvas-content.component';
 import { iFavorites } from '../../interfaces/favorites';
+import { iAccessData } from '../../interfaces/i-access-data';
 
 @Component({
   selector: 'app-home',
@@ -35,6 +36,8 @@ export class HomeComponent {
     this.getAllMovie();
     this.getAllUser();
     this.getThisUser();
+    this.authServ.restoreUser();
+    this.setupAutoLogout();
     setTimeout(() => console.log(this.movieArr[0]?.img), 2000);
   }
 
@@ -95,5 +98,18 @@ export class HomeComponent {
 
   deleteFav(id: number) {
     this.movieServ.deleteFavorites(id).subscribe();
+  }
+
+  setupAutoLogout() {
+    this.authServ.authSubject$.subscribe((accessData: iAccessData | null) => {
+      if (accessData) {
+        const expDate = this.authServ.jwt.getTokenExpirationDate(
+          accessData.accessToken
+        );
+        if (expDate) {
+          this.authServ.autoLogout(expDate);
+        }
+      }
+    });
   }
 }

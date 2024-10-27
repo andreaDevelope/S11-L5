@@ -4,6 +4,7 @@ import { MovieService } from '../../services/movie.service';
 import { iUser } from '../../interfaces/i-user';
 import { AuthService } from '../../services/auth.service';
 import { map } from 'rxjs';
+import { iAccessData } from '../../interfaces/i-access-data';
 
 @Component({
   selector: 'app-favorites',
@@ -24,6 +25,8 @@ export class FavoritesComponent {
     } else {
       console.error('Utente non definito in MovieService');
     }
+    this.authServ.restoreUser();
+    this.setupAutoLogout();
   }
 
   getAllFavorites() {
@@ -60,5 +63,18 @@ export class FavoritesComponent {
     } else {
       console.log('film non trovato tra i preferiti');
     }
+  }
+
+  setupAutoLogout() {
+    this.authServ.authSubject$.subscribe((accessData: iAccessData | null) => {
+      if (accessData) {
+        const expDate = this.authServ.jwt.getTokenExpirationDate(
+          accessData.accessToken
+        );
+        if (expDate) {
+          this.authServ.autoLogout(expDate);
+        }
+      }
+    });
   }
 }
