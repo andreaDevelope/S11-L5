@@ -78,7 +78,7 @@ export class UserDetailComponent {
   remove(id: number | undefined) {
     if (id) {
       this.userServ.delete(id).subscribe();
-      this.authServ.logout();
+      // this.authServ.logout();
     } else {
       console.log('errore nell eliminazione dell user');
     }

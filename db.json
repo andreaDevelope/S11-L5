@@ -1,52 +1,12 @@
 {
   "users": [
     {
-      "email": "ciao@ciaio.com",
-      "password": "$2a$10$V2BHcBUn3bO27hSbtZ0OpOmTp3/xl8FjJCs2W.lV6WEK5bLJUVKba",
-      "nome": "Mario",
-      "cognome": "Rossi",
-      "username": "aaa",
-      "id": 1
-    },
-    {
-      "email": "ciao@ciaio2.com",
-      "password": "$2a$10$gRHcw/d3g67j0Fjjib5oFucqaLgONCs2tZsBZFmnuO18e8062YZIq",
-      "nome": "Giacomo",
-      "cognome": "Rossi",
-      "username": "bbb",
-      "id": 2
-    },
-    {
-      "email": "lucio@dalla.com",
-      "password": "$2a$10$XgIO0fh3a7dHJqsYYal4te.XbF51zqERc/hvRK1JiMVl5VBr6sqnm",
-      "nome": "Lucio",
-      "cognome": "Dalla",
-      "username": "lucione",
-      "id": 3
-    },
-    {
-      "email": "flexable@681mail.com",
-      "password": "$2a$10$lt0r1Ot8oprsg2j.lHvJFeD1rj0ARpH9U/IIV2zzC7OX2X3/7oC/.",
-      "nome": "Paolo",
-      "cognome": "Bonolis",
-      "username": "paolone",
-      "id": 4
-    },
-    {
-      "email": "antonello@venditti.como",
-      "password": "$2a$10$cZXXJ8BscQiYvHY3lhwrwO47fa2JxTfmLOK4tarZN0KsXZRgGD5YO",
-      "nome": "Roma",
-      "cognome": "Capoccia",
-      "username": "antonello",
-      "id": 5
-    },
-    {
-      "email": "aa@aa.como",
-      "password": "$2a$10$A6nHlUaGSqVq2H8nlRveT.0btQVa9eKEpfWX7xWa76irSqllBjA6i",
-      "nome": "ciao",
-      "cognome": "ciao",
-      "username": "ciao",
-      "id": 7
+      "email": "ajeje@seria.italo",
+      "password": "$2a$10$8uVKCrUpEhRb90qC.Dh5xut4Gn./IlB/fPvLckXNzL0XPNsmqszlG",
+      "nome": "Ajeje",
+      "cognome": "Brazorf",
+      "username": "ajejenumberone",
+      "id": 8
     }
   ],
   "movies-popular": [
@@ -54,136 +14,77 @@
       "titolo": "Il padrino",
       "anno": 1972,
       "regista": "Francis Ford Coppola",
-      "img": "https://i.ytimg.com/vi/tEkl2ZhwZ88/maxresdefault.jpg"
+      "img": "https://i.ytimg.com/vi/tEkl2ZhwZ88/maxresdefault.jpg",
+      "id": 1
     },
     {
       "titolo": "Forrest Gump",
       "anno": 1994,
       "regista": "Robert Zemeckis",
-      "img": "https://www.mediaplaynews.com/wp-content/uploads/2019/05/forrestgump5.jpg"
+      "img": "https://www.mediaplaynews.com/wp-content/uploads/2019/05/forrestgump5.jpg",
+      "id": 2
     },
-    {
-      "titolo": "La vita è bella",
-      "anno": 1997,
-      "regista": "Roberto Benigni",
-      "img": "https://i.pinimg.com/originals/4b/3f/6a/4b3f6a4ab448b5251cd26c66943f8331.jpg"
-    },
-    {
-      "titolo": "Inception",
-      "anno": 2010,
-      "regista": "Christopher Nolan",
-      "img": "http://images2.fanpop.com/image/photos/14300000/Inception-inception-2010-14355477-1680-1050.jpg"
-    },
-    {
-      "titolo": "Titanic",
-      "anno": 1997,
-      "regista": "James Cameron",
-      "img": "https://www.themoviedb.org/t/p/original/vIAm7UDNjGztvUYtDuS0in1VAXg.jpg"
-    },
-    {
-      "titolo": "Il cavaliere oscuro",
-      "anno": 2008,
-      "regista": "Christopher Nolan",
-      "img": "https://www.warnerbros.it/wp-content/uploads/2018/03/Il-cavaliere-oscuro-%E2%80%93-Il-ritorno.jpg"
-    },
-    {
-      "titolo": "Schindler's List",
-      "anno": 1993,
-      "regista": "Steven Spielberg",
-      "img": "https://image.tmdb.org/t/p/original/m0pV0fmMERzCvPVQbLLrPPLl5q1.jpg"
-    },
-    {
-      "titolo": "Fight Club",
-      "anno": 1999,
-      "regista": "David Fincher",
-      "img": "https://www.themoviedb.org/t/p/original/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg"
-    },
-    {
-      "titolo": "Ritorno al futuro",
-      "anno": 1985,
-      "regista": "Robert Zemeckis",
-      "img": "https://i0.wp.com/metropolitanmagazine.it/wp-content/uploads/2020/05/ritorno-al-futuro-2-683x1024.jpg"
-    },
-    {
-      "titolo": "Star Wars: Episodio IV - Una nuova speranza",
-      "anno": 1977,
-      "regista": "George Lucas",
-      "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3746BA6B2AD6225DDA78CFF871AC7E54E40908EBFA254FD2F0787347B30EACA1/scale?width=1200&aspectRatio=1.78&format=jpeg"
-    },
-    {
-      "titolo": "Il signore degli anelli: La compagnia dell'anello",
-      "anno": 2001,
-      "regista": "Peter Jackson",
-      "img": "https://i.ytimg.com/vi/AxTZZdAoVE4/maxresdefault.jpg"
-    },
-    {
-      "titolo": "Pulp Fiction",
-      "anno": 1994,
-      "regista": "Quentin Tarantino",
-      "img": "https://www.themoviedb.org/t/p/original/6lXRHGoEbnnBUKsuqpL9JxD4DzT.jpg"
-    },
-    {
-      "titolo": "Matrix",
-      "anno": 1999,
-      "regista": "Lana e Lilly Wachowski",
-      "img": "https://artworks.thetvdb.com/banners/movies/169/posters/5f274c00c85c1.jpg"
-    },
-    {
-      "titolo": "Joker",
-      "anno": 2019,
-      "regista": "Todd Phillips",
-      "img": "https://picfiles.alphacoders.com/316/thumb-1920-316379.jpg"
-    },
-    {
-      "titolo": "Interstellar",
-      "anno": 2014,
-      "regista": "Christopher Nolan",
-      "img": "https://image.tmdb.org/t/p/original/djS3XxneEFjCM6VlCiuuN8QavE6.jpg"
-    },
-    {
-      "titolo": "Gladiatore",
-      "anno": 2000,
-      "regista": "Ridley Scott",
-      "img": "https://www.postermania.it/2382-thickbox_default/locandina-il-gladiatore-ridley-scott-russell-crowe-joaquin-phoenix-cinema-cat1.jpg"
-    },
-    {
-      "titolo": "Se7en",
-      "anno": 1995,
-      "regista": "David Fincher",
-      "img": "https://m.media-amazon.com/images/M/MV5BMTMwMTU5NjY5OF5BMl5BanBnXkFtZTcwMTUzNTIwNA@@._V1_.jpg"
-    },
-    {
-      "titolo": "I soliti sospetti",
-      "anno": 1995,
-      "regista": "Bryan Singer",
-      "img": "https://www.lidentita.it/wp-content/uploads/2022/10/Screenshot_20221013_222419.jpg"
-    },
-    {
-      "titolo": "Shutter Island",
-      "anno": 2010,
-      "regista": "Martin Scorsese",
-      "img": "https://flxt.tmsimg.com/assets/p3531967_p_v13_an.jpg"
-    },
-    {
-      "titolo": "C'era una volta in America",
-      "anno": 1984,
-      "regista": "Sergio Leone",
-      "img": "https://www.stardust.it/uploads/img/movie/poster/6e3886fb46e14f2c870ea97a06792dc51552691172-1000w.jpg"
-    },
-    {
-      "titolo": "The Wolf of Wall Street",
-      "anno": 2013,
-      "regista": "Martin Scorsese",
-      "img": "https://www.themoviedb.org/t/p/original/br7n8b3ELexcvs6l30IH2x9P2ux.jpg"
-    }
-  ],
-  "favorites": [
     {
       "titolo": "La vita è bella",
       "anno": 1997,
       "regista": "Roberto Benigni",
       "img": "https://i.pinimg.com/originals/4b/3f/6a/4b3f6a4ab448b5251cd26c66943f8331.jpg",
-      "userId": 1,
+      "id": 3
+    },
+    {
+      "titolo": "Inception",
+      "anno": 2010,
+      "regista": "Christopher Nolan",
+      "img": "http://images2.fanpop.com/image/photos/14300000/Inception-inception-2010-14355477-1680-1050.jpg",
+      "id": 4
+    },
+    {
+      "titolo": "Titanic",
+      "anno": 1997,
+      "regista": "James Cameron",
+      "img": "https://www.themoviedb.org/t/p/original/vIAm7UDNjGztvUYtDuS0in1VAXg.jpg",
+      "id": 5
+    },
+    {
+      "titolo": "Il cavaliere oscuro",
+      "anno": 2008,
+      "regista": "Christopher Nolan",
+      "img": "https://www.warnerbros.it/wp-content/uploads/2018/03/Il-cavaliere-oscuro-%E2%80%93-Il-ritorno.jpg",
+      "id": 6
+    },
+    {
+      "titolo": "Schindler's List",
+      "anno": 1993,
+      "regista": "Steven Spielberg",
+      "img": "https://image.tmdb.org/t/p/original/m0pV0fmMERzCvPVQbLLrPPLl5q1.jpg",
+      "id": 7
+    },
+    {
+      "titolo": "Fight Club",
+      "anno": 1999,
+      "regista": "David Fincher",
+      "img": "https://www.themoviedb.org/t/p/original/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
+      "id": 8
+    },
+    {
+      "titolo": "Ritorno al futuro",
+      "anno": 1985,
+      "regista": "Robert Zemeckis",
+      "img": "https://i0.wp.com/metropolitanmagazine.it/wp-content/uploads/2020/05/ritorno-al-futuro-2-683x1024.jpg",
+      "id": 9
+    },
+    {
+      "titolo": "Star Wars: Episodio IV - Una nuova speranza",
+      "anno": 1977,
+      "regista": "George Lucas",
+      "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3746BA6B2AD6225DDA78CFF871AC7E54E40908EBFA254FD2F0787347B30EACA1/scale?width=1200&aspectRatio=1.78&format=jpeg",
+      "id": 10
+    },
+    {
+      "titolo": "Il signore degli anelli: La compagnia dell'anello",
+      "anno": 2001,
+      "regista": "Peter Jackson",
+      "img": "https://i.ytimg.com/vi/AxTZZdAoVE4/maxresdefault.jpg",
       "id": 11
     },
     {
@@ -191,16 +92,96 @@
       "anno": 1994,
       "regista": "Quentin Tarantino",
       "img": "https://www.themoviedb.org/t/p/original/6lXRHGoEbnnBUKsuqpL9JxD4DzT.jpg",
-      "userId": 1,
       "id": 12
+    },
+    {
+      "titolo": "Matrix",
+      "anno": 1999,
+      "regista": "Lana e Lilly Wachowski",
+      "img": "https://artworks.thetvdb.com/banners/movies/169/posters/5f274c00c85c1.jpg",
+      "id": 13
+    },
+    {
+      "titolo": "Joker",
+      "anno": 2019,
+      "regista": "Todd Phillips",
+      "img": "https://picfiles.alphacoders.com/316/thumb-1920-316379.jpg",
+      "id": 14
+    },
+    {
+      "titolo": "Interstellar",
+      "anno": 2014,
+      "regista": "Christopher Nolan",
+      "img": "https://image.tmdb.org/t/p/original/djS3XxneEFjCM6VlCiuuN8QavE6.jpg",
+      "id": 15
+    },
+    {
+      "titolo": "Gladiatore",
+      "anno": 2000,
+      "regista": "Ridley Scott",
+      "img": "https://www.postermania.it/2382-thickbox_default/locandina-il-gladiatore-ridley-scott-russell-crowe-joaquin-phoenix-cinema-cat1.jpg",
+      "id": 16
+    },
+    {
+      "titolo": "Se7en",
+      "anno": 1995,
+      "regista": "David Fincher",
+      "img": "https://m.media-amazon.com/images/M/MV5BMTMwMTU5NjY5OF5BMl5BanBnXkFtZTcwMTUzNTIwNA@@._V1_.jpg",
+      "id": 17
+    },
+    {
+      "titolo": "I soliti sospetti",
+      "anno": 1995,
+      "regista": "Bryan Singer",
+      "img": "https://www.lidentita.it/wp-content/uploads/2022/10/Screenshot_20221013_222419.jpg",
+      "id": 18
+    },
+    {
+      "titolo": "Shutter Island",
+      "anno": 2010,
+      "regista": "Martin Scorsese",
+      "img": "https://flxt.tmsimg.com/assets/p3531967_p_v13_an.jpg",
+      "id": 19
     },
     {
       "titolo": "C'era una volta in America",
       "anno": 1984,
       "regista": "Sergio Leone",
       "img": "https://www.stardust.it/uploads/img/movie/poster/6e3886fb46e14f2c870ea97a06792dc51552691172-1000w.jpg",
-      "userId": 1,
-      "id": 36
+      "id": 20
+    },
+    {
+      "titolo": "The Wolf of Wall Street",
+      "anno": 2013,
+      "regista": "Martin Scorsese",
+      "img": "https://www.themoviedb.org/t/p/original/br7n8b3ELexcvs6l30IH2x9P2ux.jpg",
+      "id": 21
+    }
+  ],
+  "favorites": [
+    {
+      "titolo": "Il padrino",
+      "anno": 1972,
+      "regista": "Francis Ford Coppola",
+      "img": "https://i.ytimg.com/vi/tEkl2ZhwZ88/maxresdefault.jpg",
+      "userId": 8,
+      "id": 37
+    },
+    {
+      "titolo": "Forrest Gump",
+      "anno": 1994,
+      "regista": "Robert Zemeckis",
+      "img": "https://www.mediaplaynews.com/wp-content/uploads/2019/05/forrestgump5.jpg",
+      "userId": 8,
+      "id": 38
+    },
+    {
+      "titolo": "The Wolf of Wall Street",
+      "anno": 2013,
+      "regista": "Martin Scorsese",
+      "img": "https://www.themoviedb.org/t/p/original/br7n8b3ELexcvs6l30IH2x9P2ux.jpg",
+      "userId": 8,
+      "id": 39
     }
   ]
 }
