@@ -14,6 +14,7 @@ import { iAccessData } from '../../interfaces/i-access-data';
 export class FavoritesComponent {
   favArr: iFavorites[] = [];
   user!: iUser;
+  isDelete: boolean = false;
 
   constructor(private movieServ: MovieService, private authServ: AuthService) {}
 
@@ -59,7 +60,9 @@ export class FavoritesComponent {
   remove(id: number | undefined) {
     if (id) {
       this.movieServ.deleteFavorites(id).subscribe();
-      window.location.reload();
+      this.isDelete = true;
+      setTimeout(() => (this.isDelete = false), 3000);
+      setTimeout(() => window.location.reload(), 3000);
     } else {
       console.log('film non trovato tra i preferiti');
     }

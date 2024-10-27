@@ -80,20 +80,31 @@ export class HomeComponent {
     };
 
     this.movieServ.addFavorite(favorite).subscribe((fav) => {
-      const alreadyExists = this.favorites.some((favo) => favo?.id === fav.id);
+      // Verifica se il film esiste già nei preferiti confrontando il titolo
+
+      const alreadyExists = this.favorites.filter((favo) => {
+        if (favo) {
+          if (favo.titolo === favorite.titolo) {
+            return true;
+          } else {
+            return false;
+          }
+        } else {
+          return;
+        }
+      });
 
       if (!alreadyExists) {
-        this.favorites = this.favorites.filter(
-          (favo) => favo && favo.id !== fav.id
-        );
+        // Aggiunge il film solo se non è già nei preferiti
         this.favorites.push(fav);
+        console.log('Film aggiunto ai preferiti!');
       } else {
         console.log('Il film è già nei preferiti!');
       }
-    });
 
-    this.isAdded = true;
-    setTimeout(() => (this.isAdded = false), 5000);
+      this.isAdded = true;
+      setTimeout(() => (this.isAdded = false), 5000);
+    });
   }
 
   deleteFav(id: number) {

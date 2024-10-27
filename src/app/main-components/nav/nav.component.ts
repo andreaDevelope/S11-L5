@@ -10,6 +10,7 @@ import { AuthService } from '../../services/auth.service';
 export class NavComponent {
   isLogIn: boolean = false;
   isShure: boolean = false;
+  isShowMenu: boolean = true;
   constructor(private authServ: AuthService) {
     this.register();
   }
@@ -35,5 +36,9 @@ export class NavComponent {
     setTimeout(() => {
       this.isShure = false;
     }, 2500);
+  }
+
+  ShowMenu() {
+    this.isShowMenu = !this.isShowMenu;
   }
 }
