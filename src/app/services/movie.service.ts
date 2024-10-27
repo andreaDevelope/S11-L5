@@ -29,6 +29,10 @@ export class MovieService {
       .pipe(map((movie) => (this.movieArr = movie)));
   }
 
+  getMovieById(id: number) {
+    return this.http.get<iMovie>(`${this.movieUrl}/${id}`);
+  }
+
   addFavorite(movie: iFavorites) {
     return this.http.post<iFavorites>(this.favoritesUrl, movie);
   }

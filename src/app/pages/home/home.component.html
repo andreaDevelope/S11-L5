@@ -38,6 +38,12 @@
           <button (click)="addFavorite(movie)" class="btn btn-primary">
             LIKE
           </button>
+          <button
+            [routerLink]="['/movie-detail', movie.id]"
+            class="btn btn-warning ms-2"
+          >
+            INFO
+          </button>
         </div>
       </div>
     </div>

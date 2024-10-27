@@ -1,0 +1,17 @@
+<div class="movie-detail" *ngIf="movie">
+  <h1 class="mx-auto w-50 rounded-4 bg-danger text-white py-2 slide-in">
+    {{ movie.titolo }}
+  </h1>
+  <div class="video-container">
+    <video controls>
+      <source [src]="movie.trailer" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <button
+    routerLink="/home"
+    class="btn btn-warning mx-auto px-2 py-1 text-white mt-2"
+  >
+    BACK TO HOME
+  </button>
+</div>

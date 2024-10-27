@@ -10,7 +10,12 @@ import { FooterComponent } from './main-components/footer/footer.component';
 import { NgbdOffcanvasContentComponent } from './main-components/ngbd-offcanvas-content/ngbd-offcanvas-content.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, FooterComponent, NgbdOffcanvasContentComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    FooterComponent,
+    NgbdOffcanvasContentComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

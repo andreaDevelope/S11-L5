@@ -45,6 +45,14 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   {
+    path: 'movie-detail/:id',
+    loadChildren: () =>
+      import('./pages/movie-detail/movie-detail.module').then(
+        (m) => m.MovieDetailModule
+      ),
+    canActivate: [AuthGuard],
+  },
+  {
     path: '**',
     loadChildren: () =>
       import('./pages/not-found/not-found.module').then(

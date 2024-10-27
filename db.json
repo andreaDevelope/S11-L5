@@ -13,6 +13,7 @@
     {
       "titolo": "Il padrino",
       "anno": 1972,
+      "trailer": "assets/Il Padrino (film 1972) TRAILER ITALIANO.mp4",
       "regista": "Francis Ford Coppola",
       "img": "https://i.ytimg.com/vi/tEkl2ZhwZ88/maxresdefault.jpg",
       "id": 1
@@ -20,6 +21,7 @@
     {
       "titolo": "Forrest Gump",
       "anno": 1994,
+      "trailer": "assets/Forrest Gump - trailer ita 1080 HD.mp4",
       "regista": "Robert Zemeckis",
       "img": "https://www.mediaplaynews.com/wp-content/uploads/2019/05/forrestgump5.jpg",
       "id": 2
@@ -27,6 +29,7 @@
     {
       "titolo": "La vita è bella",
       "anno": 1997,
+      "trailer": "assets/la vita è bella - trailer.mp4",
       "regista": "Roberto Benigni",
       "img": "https://i.pinimg.com/originals/4b/3f/6a/4b3f6a4ab448b5251cd26c66943f8331.jpg",
       "id": 3
@@ -34,6 +37,7 @@
     {
       "titolo": "Inception",
       "anno": 2010,
+      "trailer": "assets/Inception - Il terzo trailer italiano in HD.mp4",
       "regista": "Christopher Nolan",
       "img": "http://images2.fanpop.com/image/photos/14300000/Inception-inception-2010-14355477-1680-1050.jpg",
       "id": 4
@@ -41,6 +45,7 @@
     {
       "titolo": "Titanic",
       "anno": 1997,
+      "trailer": "assets/TITANIC in 3D  Trailer Ufficiale [HD]  20th Century Fox.mp4",
       "regista": "James Cameron",
       "img": "https://www.themoviedb.org/t/p/original/vIAm7UDNjGztvUYtDuS0in1VAXg.jpg",
       "id": 5
@@ -48,6 +53,7 @@
     {
       "titolo": "Il cavaliere oscuro",
       "anno": 2008,
+      "trailer": "assets/Il Cavaliere Oscuro - Secondo trailer italiano ufficiale.mp4",
       "regista": "Christopher Nolan",
       "img": "https://www.warnerbros.it/wp-content/uploads/2018/03/Il-cavaliere-oscuro-%E2%80%93-Il-ritorno.jpg",
       "id": 6
@@ -55,6 +61,7 @@
     {
       "titolo": "Schindler's List",
       "anno": 1993,
+      "trailer": "assets/Schindlers List (1993) Official Trailer - Liam Neeson, Steven Spielberg Movie HD.mp4",
       "regista": "Steven Spielberg",
       "img": "https://image.tmdb.org/t/p/original/m0pV0fmMERzCvPVQbLLrPPLl5q1.jpg",
       "id": 7
@@ -62,6 +69,7 @@
     {
       "titolo": "Fight Club",
       "anno": 1999,
+      "trailer": "assets/Fight Club  #TBT Trailer  20th Century FOX.mp4",
       "regista": "David Fincher",
       "img": "https://www.themoviedb.org/t/p/original/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
       "id": 8
@@ -69,6 +77,7 @@
     {
       "titolo": "Ritorno al futuro",
       "anno": 1985,
+      "trailer": "assets/RITORNO AL FUTURO (1985)  Trailer italiano.mp4",
       "regista": "Robert Zemeckis",
       "img": "https://i0.wp.com/metropolitanmagazine.it/wp-content/uploads/2020/05/ritorno-al-futuro-2-683x1024.jpg",
       "id": 9
@@ -76,6 +85,7 @@
     {
       "titolo": "Star Wars: Episodio IV - Una nuova speranza",
       "anno": 1977,
+      "trailer": "assets/Star Wars - Una nuova speranza (film 1977) TRAILER ITALIANO.mp4",
       "regista": "George Lucas",
       "img": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3746BA6B2AD6225DDA78CFF871AC7E54E40908EBFA254FD2F0787347B30EACA1/scale?width=1200&aspectRatio=1.78&format=jpeg",
       "id": 10
@@ -83,6 +93,7 @@
     {
       "titolo": "Il signore degli anelli: La compagnia dell'anello",
       "anno": 2001,
+      "trailer": "assets/Il Signore degli Anelli La Compagnia dellAnello - trailer italiano.mp4",
       "regista": "Peter Jackson",
       "img": "https://i.ytimg.com/vi/AxTZZdAoVE4/maxresdefault.jpg",
       "id": 11
@@ -90,6 +101,7 @@
     {
       "titolo": "Pulp Fiction",
       "anno": 1994,
+      "trailer": "assets/Pulp Fiction Official Trailer #1 - (1994) HD.mp4",
       "regista": "Quentin Tarantino",
       "img": "https://www.themoviedb.org/t/p/original/6lXRHGoEbnnBUKsuqpL9JxD4DzT.jpg",
       "id": 12
@@ -97,6 +109,7 @@
     {
       "titolo": "Matrix",
       "anno": 1999,
+      "trailer": "assets/The Matrix (1999) Official Trailer #1 - Sci-Fi Action Movie.mp4",
       "regista": "Lana e Lilly Wachowski",
       "img": "https://artworks.thetvdb.com/banners/movies/169/posters/5f274c00c85c1.jpg",
       "id": 13
@@ -104,6 +117,7 @@
     {
       "titolo": "Joker",
       "anno": 2019,
+      "trailer": "assets/JOKER - Teaser Trailer Italiano.mp4",
       "regista": "Todd Phillips",
       "img": "https://picfiles.alphacoders.com/316/thumb-1920-316379.jpg",
       "id": 14
@@ -111,6 +125,7 @@
     {
       "titolo": "Interstellar",
       "anno": 2014,
+      "trailer": "assets/Interstellar - Trailer italiano  HD.mp4",
       "regista": "Christopher Nolan",
       "img": "https://image.tmdb.org/t/p/original/djS3XxneEFjCM6VlCiuuN8QavE6.jpg",
       "id": 15
@@ -118,6 +133,7 @@
     {
       "titolo": "Gladiatore",
       "anno": 2000,
+      "trailer": "assets/Il gladiatore (Gladiator) - Trailer italiano.mp4",
       "regista": "Ridley Scott",
       "img": "https://www.postermania.it/2382-thickbox_default/locandina-il-gladiatore-ridley-scott-russell-crowe-joaquin-phoenix-cinema-cat1.jpg",
       "id": 16
@@ -125,6 +141,7 @@
     {
       "titolo": "Se7en",
       "anno": 1995,
+      "trailer": "assets/Seven (Se7en) - trailer ita HD.mp4",
       "regista": "David Fincher",
       "img": "https://m.media-amazon.com/images/M/MV5BMTMwMTU5NjY5OF5BMl5BanBnXkFtZTcwMTUzNTIwNA@@._V1_.jpg",
       "id": 17
@@ -132,6 +149,7 @@
     {
       "titolo": "I soliti sospetti",
       "anno": 1995,
+      "trailer": "assets/I Soliti Sospetti (1995) - Trailer Italiano Originale.mp4",
       "regista": "Bryan Singer",
       "img": "https://www.lidentita.it/wp-content/uploads/2022/10/Screenshot_20221013_222419.jpg",
       "id": 18
@@ -139,6 +157,7 @@
     {
       "titolo": "Shutter Island",
       "anno": 2010,
+      "trailer": "assets/Shutter Island (film 2010) TRAILER ITALIANO.mp4",
       "regista": "Martin Scorsese",
       "img": "https://flxt.tmsimg.com/assets/p3531967_p_v13_an.jpg",
       "id": 19
@@ -146,6 +165,7 @@
     {
       "titolo": "C'era una volta in America",
       "anno": 1984,
+      "trailer": "assets/Cera una volta in America (film 1984) TRAILER ITALIANO.mp4",
       "regista": "Sergio Leone",
       "img": "https://www.stardust.it/uploads/img/movie/poster/6e3886fb46e14f2c870ea97a06792dc51552691172-1000w.jpg",
       "id": 20
@@ -153,6 +173,7 @@
     {
       "titolo": "The Wolf of Wall Street",
       "anno": 2013,
+      "trailer": "assets/THE WOLF OF WALL STREET - trailer ufficiale italiano.mp4",
       "regista": "Martin Scorsese",
       "img": "https://www.themoviedb.org/t/p/original/br7n8b3ELexcvs6l30IH2x9P2ux.jpg",
       "id": 21
@@ -168,20 +189,20 @@
       "id": 37
     },
     {
-      "titolo": "Forrest Gump",
-      "anno": 1994,
-      "regista": "Robert Zemeckis",
-      "img": "https://www.mediaplaynews.com/wp-content/uploads/2019/05/forrestgump5.jpg",
-      "userId": 8,
-      "id": 38
-    },
-    {
       "titolo": "The Wolf of Wall Street",
       "anno": 2013,
       "regista": "Martin Scorsese",
       "img": "https://www.themoviedb.org/t/p/original/br7n8b3ELexcvs6l30IH2x9P2ux.jpg",
       "userId": 8,
       "id": 39
+    },
+    {
+      "titolo": "Fight Club",
+      "anno": 1999,
+      "regista": "David Fincher",
+      "img": "https://www.themoviedb.org/t/p/original/jSziioSwPVrOy9Yow3XhWIBDjq1.jpg",
+      "userId": 8,
+      "id": 40
     }
   ]
 }

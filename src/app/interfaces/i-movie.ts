@@ -3,5 +3,6 @@ export interface iMovie {
   anno: number;
   regista: string;
   img: string;
+  trailer: string;
   id?: number;
 }
