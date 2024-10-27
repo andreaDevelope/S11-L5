@@ -225,6 +225,14 @@
       "img": "https://www.warnerbros.it/wp-content/uploads/2018/03/Il-cavaliere-oscuro-%E2%80%93-Il-ritorno.jpg",
       "userId": 1,
       "id": 35
+    },
+    {
+      "titolo": "C'era una volta in America",
+      "anno": 1984,
+      "regista": "Sergio Leone",
+      "img": "https://www.stardust.it/uploads/img/movie/poster/6e3886fb46e14f2c870ea97a06792dc51552691172-1000w.jpg",
+      "userId": 1,
+      "id": 36
     }
   ]
 }

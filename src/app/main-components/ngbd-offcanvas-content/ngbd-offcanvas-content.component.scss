@@ -1,0 +1,26 @@
+.user-table {
+  color: #ffc107;
+  background-color: #343a40;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ffc107;
+  padding: 8px 16px;
+}
+
+.user-table th {
+  background-color: #dc3545;
+  color: white;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #2c2f33;
+}
+
+.user-table tr:hover {
+  background-color: #444a50;
+}

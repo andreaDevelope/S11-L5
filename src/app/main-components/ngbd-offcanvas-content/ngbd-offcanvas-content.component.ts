@@ -6,19 +6,35 @@ import { iUser } from '../../interfaces/i-user';
 @Component({
   selector: 'ngbd-offcanvas-content',
   template: `
-    <div class="offcanvas-body text-white bg-dark">
-      <h2 class="text-center my-5 text-danger">Ciao {{ name }}</h2>
-      <h3 class="text-center my-5">comunity</h3>
-      <ul *ngIf="userArr.length > 0">
-        <li *ngFor="let user of userArr">{{ user.username }}</li>
-      </ul>
-      <button
-        type="button"
-        class="btn btn-outline-secondary"
-        (click)="activeOffcanvas.close('Close click')"
-      >
-        Close
-      </button>
+    <div
+      class="offcanvas-body text-white bg-dark d-flex flex-column align-items-center"
+    >
+      <div class="d-flex flex-column align-items-center">
+        <h3 class="bg-danger rounded-4 my-5 px-3 py-1 mx-auto">Community</h3>
+
+        <table *ngIf="userArr.length > 0" class="user-table w-75 my-4">
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of userArr">
+              <td>{{ user.username }}</td>
+              <td>{{ user.id }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="activeOffcanvas.close('Close click')"
+        >
+          Close
+        </button>
+      </div>
     </div>
   `,
   styles: [
