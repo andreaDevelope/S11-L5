@@ -15,6 +15,7 @@ export class RegisterComponent {
   message: string = '';
   jwtHelper: JwtHelperService;
   isSignup: boolean = false;
+  err: boolean = false;
 
   constructor(
     private fb: FormBuilder,
@@ -80,10 +81,18 @@ export class RegisterComponent {
         password: this.form.get('psw')?.value,
       };
 
-      this.authServ.register(user).subscribe((res) => {
-        this.isSignup = true;
-        setInterval(() => this.signupMess(), 2000);
-      });
+      this.authServ.register(user).subscribe(
+        (res) => {
+          this.isSignup = true;
+          setTimeout(() => this.signupMess(), 2000);
+        },
+        (error) => {
+          console.log(error);
+          this.err = true;
+          setTimeout(() => (this.err = false), 3000);
+          setTimeout(() => this.form.reset(), 3000);
+        }
+      );
     } else {
       this.message = 'Per favore compila tutti i campi correttamente.';
     }

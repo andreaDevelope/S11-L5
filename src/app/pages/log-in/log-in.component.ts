@@ -91,7 +91,8 @@ export class LogInComponent {
         (error) => {
           console.log(error);
           this.err = true;
-          setTimeout(() => window.location.reload(), 3000);
+          setTimeout(() => (this.err = false), 3000);
+          setTimeout(() => this.form.reset(), 3000);
         }
       );
     } else {

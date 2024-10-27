@@ -97,6 +97,12 @@
       >
         Registrati
       </button>
+      <p
+        *ngIf="err"
+        class="text-center text-danger p-3 border border-danger mt-3 rounded-5"
+      >
+        email già registrata
+      </p>
     </div>
   </form>
 </div>
